@@ -23,7 +23,7 @@ def index():
     if "username" in session:
         return redirect(url_for("user", username=session["username"]))
 
-    return render_template("index.html")
+    return render_template("chat.html")
 
 
 @app.route("/chat/<username>", methods=["GET", "POST"])

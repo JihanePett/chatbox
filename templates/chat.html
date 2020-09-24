@@ -23,6 +23,10 @@
     <div class="chat-popup" id="myForm">
       <h4>What can I do for you?</h4>
       <form method="POST" class="form-container">
+
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<button class="btn btn btn-primary">Go to chat!</button>
         <textarea
           cols="50"
           rows="4"
@@ -53,14 +57,14 @@
 
       let timer = setTimeout(function () {
         location.reload();
-      }, 5000);
+      }, 20000);
 
       textbox.onkeydown = function (e) {
         clearTimeout(timer);
 
         timer = setTimeout(function () {
           location.reload();
-        }, 5000);
+        }, 20000);
       };
     </script>
 
